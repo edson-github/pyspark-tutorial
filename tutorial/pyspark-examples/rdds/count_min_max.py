@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 #
 print ("This is the name of the script: ", sys.argv[0])
 print ("Number of arguments: ", len(sys.argv))
-print ("The arguments are: " , str(sys.argv))
+print("The arguments are: ", sys.argv)
 #
 
 #   DEFINE your input path
@@ -47,10 +47,8 @@ def minmax(partition):
 #end-def
 #---------------------
 def iterate_partition(partition):
-   elements = []
-   for x in partition:
-      elements.append(x)
-   print("elements=", elements)
+	elements = list(partition)
+	print("elements=", elements)
    #print ("==================")
 #end-def
 #-------------------------
