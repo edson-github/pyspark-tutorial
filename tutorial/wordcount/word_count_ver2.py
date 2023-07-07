@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #   sys.argv[0] is the name of the script.
     #   sys.argv[1] is the first parameter
     inputPath = sys.argv[1] # input file
-    print("inputPath: {}".format(inputPath))
+    print(f"inputPath: {inputPath}")
 
 
     # create SparkContext as sc

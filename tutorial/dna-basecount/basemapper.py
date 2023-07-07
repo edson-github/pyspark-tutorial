@@ -1,14 +1,12 @@
 #!/usr/bin/python
 
 def mapper(seq):
-	freq = dict()
+	freq = {}
 	for x in list(seq):
 		if x in freq:
 			freq[x] +=1
 		else:
 			freq[x] = 1
-#
-	kv = [(x, freq[x]) for x in freq]
-	return kv
+	return [(x, freq[x]) for x in freq]
 #
 #print mapper("ATCGATCGATAT")	
